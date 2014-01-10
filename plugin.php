@@ -3,7 +3,7 @@
 Plugin Name: Simple URLs
 Plugin URI: http://www.studiopress.com/plugins/simple-urls
 Description: Simple URLs is a complete URL management system that allows you create, manage, and track outbound links from your site by using custom post types and 301 redirects.
-Version: 0.9.2
+Version: 0.9.3
 Author: Nathan Rice
 Author URI: http://www.nathanrice.net/
 */
@@ -44,7 +44,6 @@ class SimpleURLs {
 					'not_found' => __( 'No URLs found' ),
 					'not_found_in_trash' => __( 'No URLs found in Trash' )
 				),
-				'capabilities' => array( 'manage_links' ),
 				'public' => true,
 				'query_var' => true,
 				'menu_position' => 20,
