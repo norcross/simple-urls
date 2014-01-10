@@ -3,7 +3,7 @@
 Plugin Name: Simple URLs
 Plugin URI: http://www.studiopress.com/plugins/splinks
 Description: Simple URLs is a complete URL management system that allows you create, manage, and track outbound links from your site by using custom post types and 301 redirects.
-Version: 0.9
+Version: 0.9.1
 Author: Nathan Rice
 Author URI: http://www.nathanrice.net/
 */
@@ -49,7 +49,7 @@ class SimpleURLs {
 				'query_var' => true,
 				'menu_position' => 20,
 				'supports' => array( 'title' ),
-				'rewrite' => array( 'slug' => 'go' )
+				'rewrite' => array( 'slug' => 'go', 'with_front' => false )
 			)
 		);
 		
@@ -150,7 +150,7 @@ class SimpleURLs {
 		$redirect = isset( $wp_query->post->ID ) ? get_post_meta($wp_query->post->ID, '_surl_redirect', true) : '';
 
 		if ( !empty( $redirect ) ) {
-			wp_redirect( esc_url( $redirect ), 301);
+			wp_redirect( esc_url_raw( $redirect ), 301);
 			exit;
 		}
 		else {
