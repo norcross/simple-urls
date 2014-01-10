@@ -3,8 +3,8 @@ Contributors: nathanrice, studiopress
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5553118
 Tags: redirect, click tracking, custom post types
 Requires at least: 3.0
-Tested up to: 3.0.4
-Stable tag: 0.9.3
+Tested up to: 3.5
+Stable tag: 0.9.4
 
 Simple URLs is a complete URL management system that allows you create, manage, and track outbound links from your site.
 
@@ -59,3 +59,6 @@ No, not without modifying the plugin.
 = 0.9.3 =
 * Removed capability line from the register function. Users with permission to edit posts can create/edit URLs.
 * Bumped to show compatibility with WordPress 3.0.4
+
+= 0.9.4 =
+* Fixed saving bug
