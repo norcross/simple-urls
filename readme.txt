@@ -3,8 +3,8 @@ Contributors: nathanrice, studiopress
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5553118
 Tags: redirect, click tracking, custom post types
 Requires at least: 3.0
-Tested up to: 3.0.1
-Stable tag: 0.9.1
+Tested up to: 3.0.2
+Stable tag: 0.9.2
 
 Simple URLs is a complete URL management system that allows you create, manage, and track outbound links from your site.
 
@@ -51,3 +51,7 @@ No, not without modifying the plugin.
 = 0.9.1 =
 * Fixed bug with URLs with ampersands in them
 * Added `'with_front' => false` to the post type registration
+
+= 0.9.2 =
+* Fixed a type in the plugin URL
+* Bumped to show compatibility with WordPress 3.0.2
